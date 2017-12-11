@@ -19,7 +19,13 @@ Ext.onReady(function() {
 				width: 300,
 				height: 300,
 				border : true,
-				title:'첫째패널'
+				title:'첫째패널',
+				items:[{
+					xtype:'textfield'},{
+					xtype:'textfield'},{
+						xtype:'button',
+						text: '로그인'
+				}]
 			}]
 		}]
 		
