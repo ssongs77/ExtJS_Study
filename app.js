@@ -4,6 +4,28 @@
  */
 
 Ext.onReady(function() {
+
+	//layout : 'fit', 'border'
+	//layout2 : 'center', 'absolute', 'accordion', 'hobx/vbox'
+	Ext.create("Ext.container.Viewport",{
+		layout:'fit',
+		border: true,
+		items:[{
+			xtype:'panel',
+			title:'부모패널',
+			layout: 'center',
+			items:[{
+				xtype: 'panel',
+				width: 300,
+				height: 300,
+				border : true,
+				title:'첫째패널'
+			}]
+		}]
+		
+	})
+	
+	
 	// 3강
 	// Ext.Msg.alert("타이틀", "Hello world");
 
@@ -24,7 +46,7 @@ Ext.onReady(function() {
 	 */
 
 	// 5강
-	Ext.create("Ext.container.Viewport", { //도화지 클래스 선언
+	/*Ext.create("Ext.container.Viewport", { //도화지 클래스 선언
 		renderTo : Ext.getBody(),
 		layout:'border',//border와 region이 쌍으로 이뤄 설정되어야 함.
 		border:true, 
@@ -53,7 +75,7 @@ Ext.onReady(function() {
 			flex:1,
 			region: 'center'
 		}]
-	})
+	})*/
 })
 
 // 초창기에는 Html , jsp ... 특정 영역에 extjs 코드를 부분 삽입 하는 일을 많이 함.
